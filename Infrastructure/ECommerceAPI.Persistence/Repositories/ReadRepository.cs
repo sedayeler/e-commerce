@@ -1,0 +1,37 @@
+﻿using ECommerceAPI.Application.Repositories;
+using ECommerceAPI.Domain.Entities.Common;
+using ECommerceAPI.Persistence.Contexts;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ECommerceAPI.Persistence.Repositories
+{
+    public class ReadRepository<T> : IReadRepository<T> where T : BaseEntity
+    {
+        private readonly ECommerceAPIDbContext _context;
+
+        public ReadRepository(ECommerceAPIDbContext context)
+        {
+            _context = context;
+        }
+
+        public DbSet<T> Table => _context.Set<T>();
+
+        public IQueryable<T> GetAll()
+            => Table;
+
+        public IQueryable<T> GetWhere(Expression<Func<T, bool>> method)
+            => Table.Where(method);
+
+        public Task<T> GetSingleAsync(Expression<Func<T, bool>> method)
+            => Table.FirstOrDefaultAsync(method);
+
+        public Task<T> GetById(int id)
+            => Table.FirstOrDefaultAsync(p => p.Id == id);
+    }
+}
