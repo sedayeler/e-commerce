@@ -43,3 +43,4 @@ C:\Users\asus\OneDrive\Masaüstü\E-Commerce\ECommerceAPI\Presentation\ECommerce
 C:\Users\asus\OneDrive\Masaüstü\E-Commerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\asus\OneDrive\Masaüstü\E-Commerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Users\asus\OneDrive\Masaüstü\E-Commerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\asus\OneDrive\Masaüstü\E-Commerce\ECommerceAPI\Presentation\ECommerceAPI.API\obj\Debug\net7.0\ECommerceAPI.API.sourcelink.json

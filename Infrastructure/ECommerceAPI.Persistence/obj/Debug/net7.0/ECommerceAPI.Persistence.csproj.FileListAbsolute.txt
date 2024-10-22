@@ -17,3 +17,4 @@ C:\Users\asus\OneDrive\Masaüstü\E-Commerce\ECommerceAPI\Infrastructure\ECommer
 C:\Users\asus\OneDrive\Masaüstü\E-Commerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net7.0\ECommerceAPI.Persistence.pdb
 C:\Users\asus\OneDrive\Masaüstü\E-Commerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net7.0\ECommerceAPI.Persistence.genruntimeconfig.cache
 C:\Users\asus\OneDrive\Masaüstü\E-Commerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net7.0\ref\ECommerceAPI.Persistence.dll
+C:\Users\asus\OneDrive\Masaüstü\E-Commerce\ECommerceAPI\Infrastructure\ECommerceAPI.Persistence\obj\Debug\net7.0\ECommerceAPI.Persistence.sourcelink.json
