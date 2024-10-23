@@ -10,10 +10,9 @@ namespace ECommerceAPI.Application.Repositories
     public interface IWriteRepository<T> : IRepository<T> where T : BaseEntity
     {
         Task<bool> Add(T entity);
-        Task<bool> Add (List<T> entities);
+        Task<bool> Add(List<T> entities);
         Task<bool> UpdateAsync(T entity);
         Task<bool> Remove(T entity);
         Task<bool> Remove(int id);
-
     }
 }

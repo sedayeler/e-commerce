@@ -31,7 +31,7 @@ namespace ECommerceAPI.Persistence.Repositories
         public Task<T> GetSingleAsync(Expression<Func<T, bool>> method)
             => Table.FirstOrDefaultAsync(method);
 
-        public Task<T> GetById(int id)
-            => Table.FirstOrDefaultAsync(p => p.Id == id);
+        public async Task<T> GetById(int id)
+            => await Table.FirstOrDefaultAsync(p => p.Id == id);
     }
 }
