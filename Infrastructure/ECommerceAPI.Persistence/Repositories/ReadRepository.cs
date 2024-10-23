@@ -28,8 +28,8 @@ namespace ECommerceAPI.Persistence.Repositories
         public IQueryable<T> GetWhere(Expression<Func<T, bool>> method)
             => Table.Where(method);
 
-        public Task<T> GetSingleAsync(Expression<Func<T, bool>> method)
-            => Table.FirstOrDefaultAsync(method);
+        public async Task<T> GetSingleAsync(Expression<Func<T, bool>> method)
+            => await Table.FirstOrDefaultAsync(method);
 
         public async Task<T> GetById(int id)
             => await Table.FirstOrDefaultAsync(p => p.Id == id);
