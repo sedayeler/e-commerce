@@ -10,6 +10,10 @@ namespace ECommerceAPI.Persistence.Contexts
 {
     public class ECommerceAPIDbContext : DbContext
     {
+        public ECommerceAPIDbContext(DbContextOptions options) : base(options)
+        {
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseNpgsql(Configuration.ConfigurationString);

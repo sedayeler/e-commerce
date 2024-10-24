@@ -13,6 +13,6 @@ namespace ECommerceAPI.Application.Repositories
         IQueryable<T> GetAll();
         IQueryable<T> GetWhere(Expression<Func<T, bool>> method);
         Task<T> GetSingleAsync(Expression<Func<T, bool>> method);
-        Task<T> GetById(int id);
+        Task<T> GetByIdAsync(int id);
     }
 }
