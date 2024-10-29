@@ -12,7 +12,7 @@ import { CompenentsModule } from './compenents/compenents.module';
     LayoutModule,
     CompenentsModule
   ],
-  exports : [
+  exports: [
     LayoutModule
   ]
 })

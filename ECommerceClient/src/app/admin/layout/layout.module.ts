@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout.component';
 import { CompenentsModule } from './compenents/compenents.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -11,10 +12,11 @@ import { CompenentsModule } from './compenents/compenents.module';
   ],
   imports: [
     CommonModule,
-    CompenentsModule
+    CompenentsModule,
+    RouterModule
   ],
   exports : [
-    LayoutComponent
+    LayoutComponent   
   ]
 })
 export class LayoutModule { }
