@@ -9,9 +9,9 @@ import { CustomToastrService, ToastrMessageType, ToastrPosition } from './servic
 export class AppComponent {
   title = 'ECommerceClient';
 
-  constructor(private toastr: CustomToastrService) {
-    toastr.message("Selam", "Ui", ToastrMessageType.Info, ToastrPosition.TopRight);
-  }
+  // constructor(private toastr: CustomToastrService) {
+  //   toastr.message("Selam", "Ui", ToastrMessageType.Info, ToastrPosition.TopRight);
+  // }
 }
 
 
