@@ -3,6 +3,7 @@ import { ServerModule } from '@angular/platform-server';
 
 import { AppModule } from './app.module';
 import { AppComponent } from './app.component';
+import { ToastrService } from 'ngx-toastr';
 
 @NgModule({
   imports: [
@@ -11,4 +12,4 @@ import { AppComponent } from './app.component';
   ],
   bootstrap: [AppComponent],
 })
-export class AppServerModule {}
+export class AppServerModule { }
