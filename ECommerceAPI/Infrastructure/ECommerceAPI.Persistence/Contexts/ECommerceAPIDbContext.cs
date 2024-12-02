@@ -34,10 +34,17 @@ namespace ECommerceAPI.Persistence.Contexts
                 {
                     EntityState.Added => data.Entity.CreatedAt = DateTime.UtcNow,
                     EntityState.Modified => data.Entity.UpdatedAt = DateTime.UtcNow,
+                    _ => DateTime.UtcNow
                 };
             }
             return base.SaveChangesAsync(cancellationToken);
+        }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Product>()
+                .Property(p => p.Id)
+                .ValueGeneratedOnAdd();  
         }
     }
 }

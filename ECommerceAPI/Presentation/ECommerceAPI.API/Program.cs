@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddPersistenceServices();
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
-    policy.WithOrigins("http://localhost:4200/", "https://localhost:4200/")
+    policy.WithOrigins("http://localhost:4200", "https://localhost:4200")
     .AllowAnyHeader().AllowAnyMethod()));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

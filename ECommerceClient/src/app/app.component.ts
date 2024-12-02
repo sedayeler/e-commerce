@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CustomToastrService, ToastrMessageType, ToastrPosition } from './services/ui/custom-toastr.service';
-declare var $: any;
+declare var $: any
 
 @Component({
   selector: 'app-root',
@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   // }
 
   ngOnInit(): void {
-    $.get("https://localhost:7031/api/Products")
+
   }
 }
 
